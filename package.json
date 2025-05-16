@@ -2,9 +2,10 @@
   "name": "CSE-341-proj1",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.mjs"
   },
   "keywords": [],
   "repository": {
@@ -13,5 +14,8 @@
   },
   "author": "Roque Pulido",
   "license": "ISC",
-  "packageManager": "pnpm@10.10.0"
+  "packageManager": "pnpm@10.11.0+sha256.a69e9cb077da419d47d18f1dd52e207245b29cac6e076acedbeb8be3b1a67bd7",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
