@@ -1,0 +1,6 @@
+# Test REST API
+### Test the REST API with a GET all contacts request
+GET https://cse-341-proj1.onrender.com/contacts
+
+### Test the REST API with a GET contact by ID request
+GET https://cse-341-proj1.onrender.com/contacts/6826eaf4aafd6f848c0f09bb
