@@ -1,0 +1,17 @@
+{
+  "name": "CSE-341-proj1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roquepulido/CSE-341-proj1.git"
+  },
+  "author": "Roque Pulido",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0"
+}
