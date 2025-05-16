@@ -1,0 +1,33 @@
+# Test REST API
+### Test the REST API with a GET all contacts request
+GET http://localhost:3000/contacts
+
+### Test the REST API with a GET contact by ID request
+GET http://localhost:3000/contacts/6827672d173ae7c109deeca5
+
+### Test the REST API with a POST request to create a new contact
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+    "firstName": "New2",
+    "lastName": "Farress2",
+    "email": "jfarress3112@opera.com",
+    "favoriteColor": "RED",
+    "birthDate": "8/30/2040"
+}
+
+### Test the REST API with a PUT request to update a contact
+PUT http://localhost:3000/contacts/6827672d173ae7c109deeca5
+Content-Type: application/json
+
+{
+    "firstName": "Change Name",
+    "lastName": "Change Last",
+    "email": "Change@opera.com",
+    "favoriteColor": "Pink",
+    "birthDate": "8/30/2010"
+}
+
+### Test the REST API with a DELETE request to delete a contact
+DELETE http://localhost:3000/contacts/6827672d173ae7c109deeca5
