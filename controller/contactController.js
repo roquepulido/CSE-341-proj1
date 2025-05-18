@@ -2,6 +2,7 @@ import { getDatabase } from "../data/database.js";
 import { ObjectId } from "mongodb";
 
 export const getAll = async (req, res) => {
+  //#swagger.tags = ["Contacts"];
   console.log("Fetching all contacts");
   try {
     const db = getDatabase().db("project_1").collection("contacts");
@@ -15,6 +16,7 @@ export const getAll = async (req, res) => {
 };
 
 export const getById = async (req, res) => {
+  //#swagger.tags = ["Contacts"];
   console.log("Fetching contact with ID:", req.params.id);
   const { id } = req.params;
   try {
@@ -32,6 +34,7 @@ export const getById = async (req, res) => {
 };
 
 export const create = async (req, res) => {
+  //#swagger.tags = ["Contacts"];
   console.log("Creating new contact");
   console.log("Request body:", req.body);
   const { firstName, lastName, email, favoriteColor, birthDate } = req.body;
@@ -52,6 +55,7 @@ export const create = async (req, res) => {
 };
 
 export const update = async (req, res) => {
+  //#swagger.tags = ["Contacts"];
   console.log("Updating contact with ID:", req.params.id);
   console.log("Request body:", req.body);
   const { id } = req.params;
@@ -74,6 +78,7 @@ export const update = async (req, res) => {
 };
 
 export const remove = async (req, res) => {
+  //#swagger.tags = ["Contacts"];
   console.log("Deleting contact with ID:", req.params.id);
   const { id } = req.params;
   try {
