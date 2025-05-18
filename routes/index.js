@@ -1,9 +1,7 @@
 import express from 'express';
 import Contacts from './contacts.js';
-import dotenv from "dotenv";
 import swaggerRouter from './swagger.js';
-
-dotenv.config();
+import { version } from '../server.js';
 
 const router = express.Router();
 
@@ -16,7 +14,7 @@ router.get('/', (req, res) => {
 
 router.get('/version', (req, res) => {
   //#swagger.tags = ['Version']
-  res.send(`This is version ${process.env.VERSION}`);
+  res.send(`This is version ${version}`);
 });
 
 router.use('/contacts', Contacts);
