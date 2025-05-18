@@ -1,12 +1,9 @@
 import swaggerAutogen from "swagger-autogen";
-import { configDotenv } from "dotenv";
-
-configDotenv();
-
+import { version } from "./server.js";
 const doc = {
   info: {
     title: "Project 01 Contact API",
-    version: process.env.VERSION,
+    version: version,
     description: "API documentation",
   },
   host: "cse-341-proj1.onrender.com",

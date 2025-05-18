@@ -4,6 +4,7 @@ import {initDb} from "./data/database.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+export const version = "0.0.3";
 
 app.use(express.json());
 
@@ -19,7 +20,7 @@ app.use((req, res, next) => {
 app.use("/", router);
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on http://localhost:${PORT} - Version: ${version}`);
 });
 // Initialize the database
 initDb((error) => {
